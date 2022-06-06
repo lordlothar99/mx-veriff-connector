@@ -13,7 +13,6 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
 import com.mendix.webui.CustomJavaAction;
-
 import veriff.proxies.Document;
 import veriff.proxies.Person;
 import veriff.proxies.Verification;
