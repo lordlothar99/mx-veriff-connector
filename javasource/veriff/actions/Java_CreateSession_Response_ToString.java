@@ -10,7 +10,6 @@
 package veriff.actions;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
-
 import com.mendix.core.CoreException;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
