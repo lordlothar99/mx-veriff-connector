@@ -1,5 +1,5 @@
-# Blank Web App
+# Veriff connector
+Mendix integration with [Veriff](https://veriff.com/). Veriff is a KYC, AML and identity verification platform. 
 
-House of [Blank Web App](https://marketplace.mendix.com/link/component/51830)
-
-For collaboration with Atlas or Widgets, please visit [Widgets Resources](https://github.com/mendix/widgets-resources)
+## Setup
+You need to ask for an account on [Veriff](https://veriff.com/), and set the API key in the ``Config`` entity.
