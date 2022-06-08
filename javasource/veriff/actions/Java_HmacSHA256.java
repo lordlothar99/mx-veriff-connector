@@ -70,10 +70,15 @@ public class Java_HmacSHA256 extends CustomJavaAction<java.lang.String>
     }
 	
 	public static void main(String[] args) throws Exception {
-		String key = "abcdef12-abcd-abcd-abcd-abcdef012345";
-		String payload = "{\"verification\":{\"callback\":\"https://veriff.com\",\"person\":{\"firstName\":\"John\",\"lastName\":\"Smith\"},\"document\":{\"type\":\"PASSPORT\",\"country\":\"EE\"},\"vendorData\":\"unique id of a user\",\"timestamp\":\"2016-05-19T08:30:25.597Z\"}}";
-		String result = generateHmac256(payload, key);
-		System.out.println("result ok ? " + "6af6d95822e19e9cc707aec55395d8d363ba2c7bc4625bc04ebeca0c7bf8cd67".equals(result));
+		String hmac = generateHmac256(
+				"{\"verification\":{\"callback\":\"https://veriff.com\",\"person\":{\"firstName\":\"John\",\"lastName\":\"Smith\"},\"document\":{\"type\":\"PASSPORT\",\"country\":\"EE\"},\"vendorData\":\"unique id of a user\",\"timestamp\":\"2016-05-19T08:30:25.597Z\"}}",
+				"abcdef12-abcd-abcd-abcd-abcdef012345");
+		System.out.println("hmac : " + hmac);
+		if ("6af6d95822e19e9cc707aec55395d8d363ba2c7bc4625bc04ebeca0c7bf8cd67".equals(hmac)) {
+			System.out.println("HMAC algorithm is ok");
+		} else {
+			System.err.println("HMAC algorithm is NOT OK");
+		}
 	}
 	// END EXTRA CODE
 }
