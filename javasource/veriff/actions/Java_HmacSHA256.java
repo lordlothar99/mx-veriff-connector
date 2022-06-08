@@ -71,8 +71,8 @@ public class Java_HmacSHA256 extends CustomJavaAction<java.lang.String>
 	
 	public static void main(String[] args) throws Exception {
 		String hmac = generateHmac256(
-				"{\"verification\":{\"callback\":\"https://veriff.com\",\"person\":{\"firstName\":\"John\",\"lastName\":\"Smith\"},\"document\":{\"type\":\"PASSPORT\",\"country\":\"EE\"},\"vendorData\":\"unique id of a user\",\"timestamp\":\"2016-05-19T08:30:25.597Z\"}}",
-				"abcdef12-abcd-abcd-abcd-abcdef012345");
+				"02a70f5f-95b9-4d37-8e87-b43dbd3faa31",
+				"8a3692c2-5247-4eed-938b-014feb9ebae6");
 		System.out.println("hmac : " + hmac);
 		if ("6af6d95822e19e9cc707aec55395d8d363ba2c7bc4625bc04ebeca0c7bf8cd67".equals(hmac)) {
 			System.out.println("HMAC algorithm is ok");
