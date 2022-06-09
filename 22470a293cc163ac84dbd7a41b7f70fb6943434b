@@ -1,0 +1,1 @@
+{"BranchName":"main","ModelerVersion":"9.13.0.43286","ModelChanges":[{"Status":"Modified","UnitID":"c307bf4e-53f1-48e8-a66c-fb833a7e7356","UnitType":"Microflows$Microflow","UnitName":"Act_ReceiveEvent","Module":"Veriff_example"}],"RelatedStories":[],"isWebModelerCommit":false,"HasModelerVersion":true}
